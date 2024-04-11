@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>879</width>
+    <height>671</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HarmonyLife</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ime i prezime:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Datum rodjenja:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>80</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>JMBG:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>110</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Telefon:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>140</y>
+     <width>47</width>
+     <height>13</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Pol:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="ImePrezime">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>20</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="JMBG">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>80</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="Telefon">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>110</y>
+     <width>141</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="Pol">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>140</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Musko</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Zensko</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QDateEdit" name="DatumRodjenja">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>50</y>
+     <width>141</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="currentSection">
+    <enum>QDateTimeEdit::DaySection</enum>
+   </property>
+   <property name="displayFormat">
+    <string>d/M/yyyy</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="SacuvajPacijenta">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>212</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sacuvaj</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>170</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Napomena:</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="listWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>330</y>
+     <width>481</width>
+     <height>281</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPlainTextEdit" name="Napomena">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>170</y>
+     <width>141</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="plainText">
+    <string/>
+   </property>
+   <property name="placeholderText">
+    <string>npr. Alergije</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="IspisCekanja">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>50</y>
+     <width>321</width>
+     <height>601</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>251</width>
+     <height>241</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>290</y>
+     <width>501</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lista pacijenata:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Refresh">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>330</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Osvezi listu</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Pretraga">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>330</y>
+      <width>141</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="inputMask">
+     <string/>
+    </property>
+    <property name="placeholderText">
+     <string>npr. Pera Peric</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Pretrazi">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>330</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Pretrazi pacijenta:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Ucitaj">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>10</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ucitaj pacijenta</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QFrame" name="frame_3">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>10</y>
+     <width>341</width>
+     <height>651</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Sunken</enum>
+   </property>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lista cekanja:</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Obrisi">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>10</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Obrisi iz liste</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="OsveziCekanje">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>81</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Osvezi listu</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="saglasnost">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>260</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Saglasnost</string>
+   </property>
+  </widget>
+  <zorder>frame_3</zorder>
+  <zorder>frame_2</zorder>
+  <zorder>frame</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>label_5</zorder>
+  <zorder>ImePrezime</zorder>
+  <zorder>JMBG</zorder>
+  <zorder>Telefon</zorder>
+  <zorder>Pol</zorder>
+  <zorder>DatumRodjenja</zorder>
+  <zorder>SacuvajPacijenta</zorder>
+  <zorder>label_6</zorder>
+  <zorder>listWidget</zorder>
+  <zorder>Napomena</zorder>
+  <zorder>IspisCekanja</zorder>
+  <zorder>saglasnost</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
